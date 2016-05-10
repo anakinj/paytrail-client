@@ -57,7 +57,7 @@ end
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/antmanj/paytrail-client.
+Bug reports and pull requests are welcome on GitHub at https://github.com/anakinj/paytrail-client.
 
 ## License
 
