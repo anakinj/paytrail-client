@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://13466:6pKF4jkv97zmqBJ3ZL8gUw5DfT2NMQ@payment.paytrail.com/api-payment/create
+    uri: https://payment.paytrail.com/api-payment/create
     body:
       encoding: UTF-8
       string: '{"orderNumber":"1234","currency":"EUR","locale":"en_US","urlSet":{"success":"http://www.example.org/success","failure":"http://www.example.org/failure","pending":"http://www.example.org/pending","notification":"http://www.example.org/notification"},"price":100.54}'
@@ -11,40 +11,44 @@ http_interactions:
       - application/json
       Accept-Encoding:
       - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.0.0 x86_64) ruby/2.4.2p198
       Content-Type:
       - application/json
       X-Verkkomaksut-Api-Version:
       - '1'
       Content-Length:
       - '264'
-      User-Agent:
-      - Ruby
+      Host:
+      - payment.paytrail.com
+      Authorization:
+      - Basic MTM0NjY6NnBLRjRqa3Y5N3ptcUJKM1pMOGdVdzVEZlQyTk1R
   response:
     status:
       code: 201
       message: Created
     headers:
       Date:
-      - Tue, 08 Mar 2016 19:59:19 GMT
+      - Tue, 24 Oct 2017 08:53:30 GMT
       Server:
       - Apache
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
-      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      - no-store, no-cache, must-revalidate
       Pragma:
       - no-cache
       Set-Cookie:
-      - SVPayment=oa4seu24ndimg194fgtmgc2ac5; path=/; domain=.paytrail.com; secure;HttpOnly;Secure
-      - svm_payment=!CE2QMPvuZikARspFurRqQB2VUNUOsDNGgirCNzbWDoPrNHfF5PZBfrGfvE0BxOT1SSsIYrssKRwkA8c=;
-        path=/
+      - SVPayment=r600m1c50aqt1sobqk3q9n3ao0; path=/; domain=.paytrail.com; secure;HttpOnly;Secure
+      - svm_payment=!myrViqN2gaMhHoWj+BcfjJHmtNtebE8We2lAm6lNVr3a2YEZ0CrFzoYLNQMUCHYuR43m0MmJ33PDc1E=;
+        Secure; HttpOnly; path=/
       Content-Length:
       - '224'
       Content-Type:
       - application/json
     body:
       encoding: UTF-8
-      string: '{"orderNumber":"1234","token":"jC8mpCWzURSwjJYKL73kLbf8UNRKgVGbg1gNkV3g2Lb8LTatsjESp9z8tBhkFTPh","url":"https:\/\/payment.paytrail.com\/payment\/load\/token\/jC8mpCWzURSwjJYKL73kLbf8UNRKgVGbg1gNkV3g2Lb8LTatsjESp9z8tBhkFTPh"}'
+      string: '{"orderNumber":"1234","token":"MgCPiELkAGyBY57RxMT9tjMzd2mSJpGgPPqqPJLQp9tvZeHsXRLaEWYz4DWtAsTH","url":"https:\/\/payment.paytrail.com\/payment\/load\/token\/MgCPiELkAGyBY57RxMT9tjMzd2mSJpGgPPqqPJLQp9tvZeHsXRLaEWYz4DWtAsTH"}'
     http_version: 
-  recorded_at: Tue, 08 Mar 2016 19:59:20 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Tue, 24 Oct 2017 08:53:30 GMT
+recorded_with: VCR 3.0.3
